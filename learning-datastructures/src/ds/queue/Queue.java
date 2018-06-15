@@ -17,9 +17,20 @@ public class Queue {
 	}
 	
 	public void insert(long j) {
-		rear++;
-		queArray[rear] = j;
-		nItems++;
+		
+		//this commented out code is used to overwrite the first element when the queue gets full 'Circular Queue'
+		//if(rear == maxSize - 1) {
+		//	rear = -1;
+		//}
+		
+		if(isFull()) {
+			System.out.print("There are too many items in the queue! Increase the queue size.");
+		}
+		else {
+			rear++;
+			queArray[rear] = j;
+			nItems++;
+		}
 	}
 	
 	public long remove() { //remove item from the front of the queue
@@ -34,6 +45,14 @@ public class Queue {
 	
 	public long peekFront() {
 		return queArray[front];
+	}
+	
+	public boolean isEmpty() {
+		return (nItems == 0);
+	}
+	
+	public boolean isFull() {
+		return (nItems == maxSize);
 	}
 	
 	public void view() {

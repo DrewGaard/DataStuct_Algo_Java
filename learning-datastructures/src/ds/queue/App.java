@@ -9,7 +9,6 @@ public class App {
 		myQueue.insert(14);
 		myQueue.insert(12);
 		myQueue.insert(44);
-		//myQueue.insert(12); This is for later
 
 		myQueue.view();
 
