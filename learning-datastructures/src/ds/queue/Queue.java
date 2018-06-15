@@ -22,7 +22,7 @@ public class Queue {
 		nItems++;
 	}
 	
-	public void remove() { //remove item from the front of the queue
+	public long remove() { //remove item from the front of the queue
 		long temp = queArray[front];
 		front++;
 		if(front == maxSize) {
@@ -30,6 +30,10 @@ public class Queue {
 		}
 		nItems --;
 		return temp;
+	}
+	
+	public long peekFront() {
+		return queArray[front];
 	}
 	
 	public void view() {
