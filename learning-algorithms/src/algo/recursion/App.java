@@ -14,4 +14,8 @@ public class App {
 		
 		System.out.println("Completed Call: " + n);
 	}
+	
+	public static int recursiveLinearSearch(int [] a, int i, int x) {
+		
+	}
 }
