@@ -3,7 +3,7 @@ package algo.binarysearch;
 public class App {
 
 	public static void main(String[] args) {
-		System.out.println(binarySearch(new int[] {1,2,3,4,7,9,12,18}, 88));
+		System.out.println(recursiveBinarySearch(new int[] {1,2,3,4,7,9,12,18}, 0, 7, 9));
 	}
 	
 	public static int binarySearch(int [] a, int x) {
@@ -21,6 +21,11 @@ public class App {
 			}
 		}
 		return -1;
+	}
+	
+	public static int recursiveBinarySearch(int [] a, int p, int r, int x)
+	{
+		
 	}
 
 }
