@@ -14,7 +14,7 @@ public class App {
 			int element = a[i]; // element variable contains the data we intend to bring over to the sorted area
 			int j = i-1; // j variable points to the index position of the last value in the sorted area
 			while(j >= 0 && a[j] > element) {
-				a[j+i] = a[j];
+				a[j+1] = a[j];
 				j--;
 			}
 			a[j+1] = element;
